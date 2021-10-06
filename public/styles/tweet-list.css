@@ -1,10 +1,10 @@
-#container {
+.tweet-container {
   border-style: solid;
   border-color: #545149;
   margin: 40px 15px;
   height: 20%; 
 }
-#container:hover {
+.tweet-container:hover {
   box-shadow: 5px 4px 0px 1px rgba(94,124,255,0.38);
 }
 
