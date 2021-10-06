@@ -1,0 +1,32 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1.5em;
+}
+
+#tweet {
+  border-style: solid;
+  background-color: #4056A1;
+  color:#FFFFFF;
+}
+
+.tweet-size {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 15px;
+  font-weight: bold;
+  font-family: 'Bungee';
+}
+#tweet-text {
+    border-top: 4px none;
+    border-left: 4px none;
+    border-right: 4px none;
+    background: rgb(244, 241, 236);
+    border-bottom-width: 4px;
+    margin: 0px;
+    resize: none;
+    outline: none;
+
+}

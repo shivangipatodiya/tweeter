@@ -1,0 +1,54 @@
+#container {
+  border-style: solid;
+  border-color: #545149;
+  margin: 40px 15px;
+  height: 20%; 
+}
+#container:hover {
+  box-shadow: 5px 4px 0px 1px rgba(94,124,255,0.38);
+}
+
+.list-name {
+  margin: 1.2em;
+  display:flex;
+  justify-content: space-between;
+}
+
+article { 
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+footer {
+  border-top: solid;
+  border-color: #545149;
+  margin: 1em;
+}
+footer div {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: .5em;
+  
+}
+ .icons {
+   color: #4056A1;
+   display: flex;
+   justify-content: space-evenly;
+   width: 65px;
+   cursor: pointer;
+   font-size: 13px;
+ }
+ .icons .fa-flag:hover {
+   color:#3a6100;
+ }
+ .icons .fa-retweet:hover {
+  color:#3a6100;
+}
+.icons .fa-heart:hover {
+  color:#3a6100;
+}

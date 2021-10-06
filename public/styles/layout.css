@@ -23,3 +23,14 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+body {
+  font-family: 'Source Sans Pro', sans-serif; 
+}
+span {
+  font-family: 'Bungee';
+}
+main {
+  width: 90%;
+  background-color: #f4f1ec;
+  vertical-align: center;
+}
