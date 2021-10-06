@@ -19,4 +19,6 @@ nav {
   padding-left: 1.5em;
   padding-right: 1.5em;
   z-index: 2;
+  position: fixed;
+  top: 0;
 }
