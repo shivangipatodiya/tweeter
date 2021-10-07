@@ -33,7 +33,9 @@
 
 const createTweetElement = (data) => {
   let tweet = data.content.text;
-  return $(`<article class="tweet">${tweet}</article>`);
+  let $text = $("<article>").text(data.content.text);
+  return $text.addClass("tweet");
+  //$(`<article class="tweet">${tweet}</article>`);
 };
 
 const renderTweets = (array) => {
@@ -49,11 +51,21 @@ $("form").submit(function (event) {
   event.preventDefault();
   let $tweetLength = $("#tweet-text").val().length;
   if ($tweetLength === 0) {
-    alert("Tweet cannot be blank!");
+    $("#error").slideDown("slow", () => {
+      $("#error").html(
+        `<i class="fa-solid fa-circle-xmark"></i>&nbsp;&nbsp;Tweet cannot be blank!`
+      );
+      $("#error").show();
+    });
     return;
   }
   if ($tweetLength > 140) {
-    alert("Tweet is too long!");
+    $("#error").slideDown("slow", () => {
+      $("#error").html(
+        `<i class="fa-solid fa-circle-xmark"></i>&nbsp;&nbsp;Tweet is too long!`
+      );
+      $("#error").show();
+    });
     return;
   }
   event.preventDefault();
@@ -61,18 +73,21 @@ $("form").submit(function (event) {
   $.ajax({
     url: "http://localhost:8080/tweets/",
     method: "POST",
-    data: $formInfo
-    //success: () => console.log($formInfo)
+    data: $formInfo,
+    success: loadTweets()
   });
 });
 
 const loadTweets = () => {
+  $("#error").slideUp("slow");
   $.ajax({
     url: "http://localhost:8080/tweets/",
     method: "GET"
   })
     .then((result) => {
+      console.log("myresult", result);
       renderTweets(result);
     })
     .catch((error) => {});
 };
+//loadTweets();
