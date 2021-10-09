@@ -16,3 +16,9 @@ This repository is the starter code for the project: Students will fork and clon
 - body-parser
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+!["Screenshot of tweet compose box"](https://github.com/shivangipatodiya/tweeter/blob/master/docs/new%20tweet.png?raw=true)
+!["Screenshot of tweets-box"](https://github.com/shivangipatodiya/tweeter/blob/master/docs/tweetbox.png?raw=true)
+!["Screenshot of bigscreen view of app"](https://github.com/shivangipatodiya/tweeter/blob/master/docs/bigscreen.png?raw=true)
+!["Screenshot of tablet screen version of app"](https://github.com/shivangipatodiya/tweeter/blob/master/docs/tabscreen.png?raw=true)
