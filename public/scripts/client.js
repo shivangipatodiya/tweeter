@@ -24,7 +24,7 @@ $(document).ready(function () {
     image.attr("src", $avatar);
     $nameAvatar.append(image).append($(`<div>&nbsp;&nbsp;${$userName}</div>`));
     $header.prepend($nameAvatar);
-    let $tweet = $("<article>").text($text);
+    let $tweet = $("<article>").text($text).css("word-break", "break-all");
     let $footer = $(`<footer>
                     <div>
                       <div id="time">${$time}</div>
